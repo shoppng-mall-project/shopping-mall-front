@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/react,visualstudiocode,macos,windows,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=react,visualstudiocode,macos,windows,node
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,node,visualstudiocode,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,node,visualstudiocode,react
 
 ### macOS ###
 # General
@@ -44,6 +44,7 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -78,6 +79,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+
+package-lock.json
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -232,4 +236,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/react,visualstudiocode,macos,windows,node
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,node,visualstudiocode,react
