@@ -1,13 +1,15 @@
 import './Main.css';
 
+import Intro from '../components/Intro.jsx';
+
 const Main = function(){
     return(
         <div className="Main">
-            <h1>
-                Main Page
-            </h1>
+            <Intro />
         </div>
     );
 }
+
+
 
 export default Main;
