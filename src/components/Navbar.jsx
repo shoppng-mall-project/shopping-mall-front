@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
 
 const CategoryBtn = styled.button`
   display: inline-block;
@@ -20,34 +21,40 @@ const CategoryBtn = styled.button`
 const Navbar = () => {
   const [currentTab, setCurrentTab] = useState('홈');
 
-  const changeUnderLine = e => {
-    setCurrentTab(e.target.value);
+  const changeUnderLine = (value) => {
+    setCurrentTab(value);
   };
 
 
   return (
     <>
-      <CategoryBtn
-        value="홈"
-        active={currentTab === '홈'}
-        onClick={changeUnderLine}
-      >
-        홈
-      </CategoryBtn>
-      <CategoryBtn
-        value="베스트"
-        active={currentTab === '베스트'}
-        onClick={changeUnderLine}
-      >
-        베스트
-      </CategoryBtn>
-      <CategoryBtn
-        value="카테고리"
-        active={currentTab === '카테고리'}
-        onClick={changeUnderLine}
-      >
-        카테고리
-      </CategoryBtn>
+      <NavLink to="/">
+        <CategoryBtn
+          value="홈"
+          active={currentTab === '홈'}
+          onClick={() => changeUnderLine('홈')}
+        >
+          홈
+        </CategoryBtn>
+      </NavLink>
+      <NavLink to="/best">
+        <CategoryBtn
+          value="베스트"
+          active={currentTab === '베스트'}
+          onClick={() => changeUnderLine('베스트')}
+        >
+          베스트
+        </CategoryBtn>
+      </NavLink>
+      <NavLink to="/category">
+        <CategoryBtn
+          value="카테고리"
+          active={currentTab === '카테고리'}
+          onClick={() => changeUnderLine('카테고리')}
+        >
+          카테고리
+        </CategoryBtn>
+      </NavLink>
     </>
   );
 

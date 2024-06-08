@@ -2,12 +2,14 @@ import '../styles/Intro.css';
 
 import Navbar from './Navbar.jsx';
 
-const Intro = function(){
+const Intro = function(option){
     return(
         <div className="mainBox">
             <div className="logoBox">
                 <div className="logoInsert">
-                    <div className="logo"></div>
+                    <a href="/">
+                        <div className="logo"></div>
+                    </a>
                     <p style={{fontSize: '13px'}}>스토어 정보</p>
                 </div>
             </div>
