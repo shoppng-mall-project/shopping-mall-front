@@ -4,7 +4,7 @@ import searchIcon from '../assets/icon_search.png';
 import orderIcon from '../assets/icon_order.png';
 
 
-const Header = function (){
+const Header = function (isLoggedIn){
     return(
         <div className="inner_head">
             <div className='inner_wrap'>
@@ -24,26 +24,40 @@ const Header = function (){
                         </a>
                     </span>
                     <span className='icon'>
-                        <a href='/'>
+                        <a href='/cart'>
                             <img 
                             src={cartIcon}
                             art='cart'></img>
                         </a>
                     </span>
                     <span className='icon'>
-                        <a href='/'>
+                        <a href='/order'>
                             <img 
                             src={orderIcon}
                             art='order'></img>
                         </a>
                     </span>
                 </div>
-                <div className='menu_my'>
+                <div className='menu_my_on'>
                     <a href='/login'>로그인</a>
                 </div>
             </div>
         </div>
     )
+}
+
+const LoggedOutMenu = function (){
+    return(
+        <div className='menu_my'>
+            <a href='/login'>로w인</a>
+        </div>
+    )
+}
+
+const LoggedInMenu = function (){
+    <div className='menu_my_on'>
+            <a href='/login'>로w인</a>
+    </div>
 }
 
 export default Header;
