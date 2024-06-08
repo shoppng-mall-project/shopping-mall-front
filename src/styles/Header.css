@@ -14,12 +14,13 @@
     height: 100%;
     width: 1280px;
     margin: auto;
-    
+    display: flex;
 }
 
 .title_logo{
     padding-top: 15px;
     width: 66px;
+    position: absolute;
 }
 
 .title_logo img {
@@ -28,6 +29,50 @@
 }  
 
 .menu_util{
-    align-items: flex-end;
+
+    margin-left: auto;
+    width: 170px;
+    height: 100%;
+    padding-right: auto;
+    display: flex;
+    
 }
 
+.menu_util::after{
+    margin-left: auto;
+    content: '';
+    border-right: 1px solid #ddd;
+    transform: translateY(50%);   
+    height: 50%; 
+}
+
+.menu_my{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    padding-left: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu_my a{
+    display: flex;
+    font-size: 14px;
+    color:#000;
+    text-decoration-line: none;
+    font-family: "Helvetica Neue", Tahoma, "Apple SD 산돌고딕 Neo", "Malgun Gothic", sans-serif;
+}
+
+
+.icon{
+    width: 52px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    width: 28px;
+    height: 28px;
+}
