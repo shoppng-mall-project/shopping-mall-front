@@ -5,6 +5,7 @@ const Signup = function (){
         <h1>
             Signup Page
         </h1>
+        
     );
 }
 

@@ -1,8 +1,20 @@
 .mainBox{
-    width: 100%;
+    width: 1280px;
+    margin: auto;
     height: 208.63px;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.mainBox::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    transform: translateX(-10%);
+    border-bottom: 1px solid #ddd;
 }
 .logoBox{
     margin: 0px 265px;
@@ -10,6 +22,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .logoInsert{
     width: 750px;
     height: 49.63;
@@ -17,6 +30,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .logo{
     margin: 0px 265px;
     width: 180px;
@@ -28,30 +42,43 @@
 }
 
 .top{
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
 .search {
-    margin-left: 900px;
+    margin-left: auto;
     position: relative;
     width: 300px;
-  }
+    bottom: 5px;
+    right: 0;
+}
   
-  input {
-    width: calc(100% - 40px); 
+input {
+    width: 100%; 
     border: 1px solid #bbb;
     border-radius: 8px;
     padding: 10px 12px;
     font-size: 14px;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 40px; 
 }
 
-img {
-    position : absolute;
-    width: 17px;
+.button_search {
+    position: absolute;
     top: 50%;
-    right: 12px;
-    transform: translateY(-50%); 
-  }
+    right: 10px; 
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button_search img {
+    width: 22px;
+    height: 22px;
+}

@@ -17,14 +17,13 @@ const Intro = function(option){
                 <Navbar />
                 <div className="search">
                     <input type="text" placeholder="카카오프렌즈 상품검색" />
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" />
+                    <button className='button_search'>
+                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="search" />
+                    </button>
                 </div>
             </div>
-            <hr/>
         </div>
     );
 }
-
-
 
 export default Intro;
