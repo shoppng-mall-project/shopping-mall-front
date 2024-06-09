@@ -38,7 +38,7 @@ const Header = function (isLoggedIn){
                         </a>
                     </span>
                 </div>
-                <div className='menu_my_on'>
+                <div className='menu_my'>
                     <a href='/login'>로그인</a>
                 </div>
             </div>
