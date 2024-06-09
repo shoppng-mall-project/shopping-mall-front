@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ce-paragraph{
+  text-align: left;
+}
+
+.cdx-input{
+  display: none;
+}
+
+.codex-editor--empty{
+  display: none;
+}
