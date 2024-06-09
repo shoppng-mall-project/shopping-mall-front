@@ -12,6 +12,8 @@ import Category from './pages/Category';
 import Cart from './pages/Cart';
 import OrderStatus from './pages/OrderStatus';
 
+import Intro from './components/Intro.jsx';
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
           <Route path="/order-status" element={ <OrderStatus/> }/>
           <Route path="/cart" element={ <Cart/> }/>
         </Routes>
+        <Intro />
       </div>
     </BrowserRouter>
   );
