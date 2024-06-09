@@ -6,16 +6,18 @@ import { NavLink } from "react-router-dom";
 const CategoryBtn = styled.button`
   display: inline-block;
   width: 150px;
-  padding: 10px;
+  height: 100%;
   border: none;
   background: #fff;
-
+  jsutify-content: center;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
+  padding-top:8px;
+  padding-bottom:8px;
 
   cursor: pointer;
-  border-bottom: ${props => (props.active ? '4px solid #222' : 'none')};
+  border-bottom: ${props => (props.active ? '2px solid #222' : 'none')};
 `;
 
 const Navbar = () => {

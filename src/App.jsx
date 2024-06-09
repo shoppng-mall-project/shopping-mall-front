@@ -32,7 +32,6 @@ function App() {
           <Route path="/order-status" element={ <OrderStatus/> }/>
           <Route path="/cart" element={ <Cart/> }/>
         </Routes>
-        <Intro />
       </div>
     </BrowserRouter>
   );

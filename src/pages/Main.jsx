@@ -1,9 +1,13 @@
 import './Main.css';
 import Header from '../components/Header.jsx';
+import Intro from '../components/Intro.jsx';
 
 const Main = function(){
     return(
-        <Header />
+        <div>
+            <Header />
+            <Intro />
+        </div>
     );
 }
 
